@@ -1,0 +1,50 @@
+
+<!-- A quick simple project for determining leap years 
+      to help refine my JS knowlege. -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Leap Year Calculator</title>
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Is it a leap year?</h1>
+        <p>Enter a year and find out if it's a leap year!</p>
+      </div>
+      <div>
+        <p>Choose a year: </p>
+        <input type="number" id="year" name="year" value="">
+        <button id="subBtn">Submit</button>
+      </div>
+    </div>
+    <!-- MODALS -->
+    <div class="modal" id="errorModal">
+      <!-- General Error Modal -->
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <p>Please enter a numerical year after 1000.</p>
+      </div>
+    </div>
+      <!-- Leap Year Modal -->
+    <div class="modal" id="leapModal">
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <p>You entered a leap year!</p>
+      </div>
+    </div>
+    <!-- Not a Leap Year Modal -->
+    <div class="modal" id="nonLeapModal">
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <p>You entered a non leap year!</p>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
